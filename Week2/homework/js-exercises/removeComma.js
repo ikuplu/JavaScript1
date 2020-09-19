@@ -1,3 +1,5 @@
+'use strict';
+
 // Declare a string variable called myString.
 let myString = 'hello,this,is,a,difficult,to,read,sentence';
 

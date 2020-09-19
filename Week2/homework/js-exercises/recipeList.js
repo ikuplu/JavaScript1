@@ -3,7 +3,7 @@
 // Declare a variable that holds an empty object literal (your meal recipe).
 let myRecipe = {};
 
-// Declared another object variable to specify the expected titles to log out to the console in the end.
+// Declared another object variable to specify the expected key names to log out to the console in the end.
 let myRecipeKeys = {
   title: "Meal name",
   servings: "Serves",

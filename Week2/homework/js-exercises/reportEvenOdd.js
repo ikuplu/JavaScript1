@@ -1,3 +1,5 @@
+'use strict';
+
 // Create a for loop, that iterates from 0 to 20.
 for (let i = 0; i <= 20; i++) {
 
@@ -9,9 +11,3 @@ for (let i = 0; i <= 20; i++) {
     console.log("The number " + i + " is odd!");
   }
 }
-
-
-
-
-/* If it's odd, log to the console The number [PUT_NUMBER_HERE] is odd!.
- If it's even, log to the console The number [PUT_NUMBER_HERE] is even!. */
