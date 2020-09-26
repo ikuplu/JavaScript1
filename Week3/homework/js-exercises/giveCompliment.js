@@ -21,8 +21,8 @@ function giveCompliment(name) {
   const compliment = compliments[Math.floor(Math.random() * compliments.length)];
 
   // Return a string: "You are [COMPLIMENT], [YOUR_NAME]!
-  let output = console.log("You are " + compliment + ", " + name + "!");
-  return output;
+  return console.log("You are " + compliment + ", " + name + "!");
+  
 }
 
 //Call the function three times, giving each function call the same argument: your name.

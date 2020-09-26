@@ -17,8 +17,7 @@ function tellFortune(numberKids, partnerName, location, jobTitle) {
   jobTitle = jobs[Math.floor(Math.random() * jobs.length)];
 
   // Return a string: "You will be a [JOB_TITLE] in [LOCATION], married to [PARTNER_NAME] with [NUMBER_KIDS] kids."
-  let output = console.log("You will be a " + jobTitle + " in " + location + ", married to " + partnerName + " with " + numberKids + " kids.");
-  return output;
+  return console.log("You will be a " + jobTitle + " in " + location + ", married to " + partnerName + " with " + numberKids + " kids.");
 }
 
 // Call the function 3 times, by passing the arrays as the argument.

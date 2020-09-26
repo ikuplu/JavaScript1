@@ -7,8 +7,7 @@ function calculateDogAge (age) {
   let dogAge = age * 7;
 
   //Return a string: "Your doggie is [CALCULATED_VALUE] years old in dog years!"
-  let output = console.log("Your doggie is " + dogAge + " years old in dog years!");
-  return output;
+  return console.log("Your doggie is " + dogAge + " years old in dog years!");
 }
 
 //Call the function three times with different sets of values.
