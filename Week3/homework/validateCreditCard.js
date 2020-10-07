@@ -2,37 +2,56 @@
 
 // Write a function called validateCreditNumber.
 function validateCreditNumber(num) {
-
   // Input must be 16 characters.
   if (num.length !== 16) {
-    return console.log("Invalid! The input " + num + " must contain 16 characters!");
-  } 
+    return console.log(
+      'Invalid! The input ' + num + ' must contain 16 characters!',
+    );
+  }
 
   // All characters must be numbers.
   if (num.match(/\D/) !== null) {
-    return console.log("Invalid! The input " + num + " should contain only numbers!");
+    return console.log(
+      'Invalid! The input ' + num + ' should contain only numbers!',
+    );
   }
 
-  let arr = Array.from(num, Number);  // Convert input into an array of numbers.
-  let sum = arr.reduce(function(a, b) { return a + b; }, 0);   // Declare a variable as the sum of the numbers in the array.
+  let arr = Array.from(num, Number); // Convert input into an array of numbers.
+  let sum = arr.reduce(function (a, b) {
+    return a + b;
+  }, 0); // Declare a variable as the sum of the numbers in the array.
 
   // At least two different numbers should be represented.
-  if ((sum / arr.length) === arr[0]) {
-    return console.log("Invalid! The input " + num + " should contain at least two different numbers!");
+  if (
+    arr.every(function (num) {
+      return num === arr[0];
+    })
+  ) {
+    return console.log(
+      'Invalid! The input ' +
+        num +
+        ' should contain at least two different numbers!',
+    );
   }
 
   // The last number must be even.
-  if (arr[arr.length-1] % 2 !== 0) {
-    return console.log("Invalid! The input " + num + " should have an even last number!");
+  if (arr[arr.length - 1] % 2 !== 0) {
+    return console.log(
+      'Invalid! The input ' + num + ' should have an even last number!',
+    );
   }
 
   // The sum of all the numbers must be greater than 16.
   if (sum <= 16) {
-    return console.log("Invalid! The sum of all the numbers of input " + num + " must be greater than 16!");
-  }
-
-  else {
-    return console.log("Success! The input " + num + " is a valid credit card number!");
+    return console.log(
+      'Invalid! The sum of all the numbers of input ' +
+        num +
+        ' must be greater than 16!',
+    );
+  } else {
+    return console.log(
+      'Success! The input ' + num + ' is a valid credit card number!',
+    );
   }
 }
 
