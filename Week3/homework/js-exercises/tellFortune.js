@@ -14,12 +14,12 @@ const jobs = [
 ];
 
 // Write a function named tellFortune.
-function tellFortune(numberKids, partnerName, location, jobTitle) {
+function tellFortune(numberKids, partnerNames, locations, jobTitles) {
   // Randomly select values from the arrays.
-  numberKids = numberKids[Math.floor(Math.random() * numberKids.length)];
-  partnerName = partnerName[Math.floor(Math.random() * partnerName.length)];
-  location = location[Math.floor(Math.random() * location.length)];
-  jobTitle = jobTitle[Math.floor(Math.random() * jobTitle.length)];
+  const randomNumberKids = numberKids[Math.floor(Math.random() * numberKids.length)];
+  const partnerName = partnerName[Math.floor(Math.random() * partnerName.length)];
+  const location = location[Math.floor(Math.random() * location.length)];
+  const jobTitle = jobTitle[Math.floor(Math.random() * jobTitle.length)];
 
   // Return a string: "You will be a [JOB_TITLE] in [LOCATION], married to [PARTNER_NAME] with [NUMBER_KIDS] kids."
   return console.log(
@@ -30,7 +30,7 @@ function tellFortune(numberKids, partnerName, location, jobTitle) {
       ', married to ' +
       partnerName +
       ' with ' +
-      numberKids +
+      randomNumberKids +
       ' kids.',
   );
 }

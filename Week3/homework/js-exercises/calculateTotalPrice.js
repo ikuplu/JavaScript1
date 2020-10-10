@@ -17,8 +17,8 @@ function calculateTotalPrice(items) {
   // Loop through the object and add all the number values together.
   let totalValue = 0;
   for (let key in items) {
-    if (cartForParty.hasOwnProperty(key)) {
-      totalValue += cartForParty[key];
+    if (items.hasOwnProperty(key)) {
+      totalValue += items[key];
     }
 }
   // Return a string: "Total: €[TOTAL_PRICE_ITEMS]"
